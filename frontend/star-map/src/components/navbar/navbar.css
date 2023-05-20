@@ -1,0 +1,45 @@
+.menu-wrapper {
+    position: sticky;
+    top: 0px;
+    z-index: 900;
+    background-color: #222;
+    padding: 20px 0px;
+    }
+
+    .logo {
+        display: flex;
+        color: white
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+
+    .nav-link {
+    /* margin-left: 20px; */
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    font-size: 18px;
+    }
+    
+    .nav-link:hover {
+    background-color: #222;
+    background-image: none;
+    color: white;
+    }
+    
+    .navbar-logo {
+        text-decoration: none;
+    }
+    
+    .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .nav-link.active {
+        color: white;
+      }
+      
