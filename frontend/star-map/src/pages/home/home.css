@@ -1,0 +1,6 @@
+.background{
+    /* background-image: url("../../../public/assets/space-background.jpg"); */
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+
