@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './home.css';
 import axios from 'axios';
 
 export default function Home() {
   const [responseData, setResponseData] = useState(null);
+  const navigate = useNavigate();
+
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -21,6 +23,8 @@ export default function Home() {
         }
       });
       
+      setResponseData(response.data);
+      navigate('/results')
       console.log(response.data);
     } catch (error) {
       console.error(error);

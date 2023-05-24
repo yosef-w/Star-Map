@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaArrowDown } from 'react-icons/fa';
 
-export default function Results() {
+export default function Results({ responseData }) {
+    console.log(responseData);
+
   return (
     <div>
       <div className="support-square" style={{ width: '100%', height: '100vh', backgroundImage: "url('/assets/resultsbackground.jpg')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
