@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
 import axios from 'axios';
 
-export default function Home() {
-  const [responseData, setResponseData] = useState(null);
+export default function Home({ setResponseData }) {
   const navigate = useNavigate();
-
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -22,9 +20,9 @@ export default function Home() {
           'X-RapidAPI-Host': 'stars-by-api-ninjas.p.rapidapi.com'
         }
       });
-      
+
       setResponseData(response.data);
-      navigate('/results')
+      navigate('/results');
       console.log(response.data);
     } catch (error) {
       console.error(error);
