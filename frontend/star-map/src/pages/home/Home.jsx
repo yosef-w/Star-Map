@@ -36,8 +36,10 @@ export default function Home({ setResponseData }) {
           <div className="title" style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <div style={{ display: 'flex' }}>
               <div className="support-square" style={{ width: '500px', height: '450px', backgroundImage: "url('/assets/spaceman.png')", position: 'relative' }}></div>
-              <div style={{ width: '550px', marginLeft: '20px', display: 'flex', alignItems: 'center' }}>
-                <h1 style={{ color: 'white', fontSize: '100px' }}>Explore Our Stars</h1>
+              <div style={{ width: '550px', marginLeft: '20px', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <h1 style={{ color: 'white', fontSize: '60px' }}>Explore The Stars</h1>
+                <p></p>
+                <h1 style={{ color: 'white', fontSize: '21.3px' }}>Look up at the stars and not down at your feet. Be curious. - Stephen Hawking</h1>
               </div>
             </div>
             <div className="searchbar" style={{ width: '800px', textAlign: 'center' }}>

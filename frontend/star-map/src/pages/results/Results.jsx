@@ -23,10 +23,10 @@ export default function Results({ responseData }) {
               </p>
               <div className="d-flex justify-content-between">
                 <a href="#" className="btn btn-primary">
-                  Button 1
+                  Save to Profile
                 </a>
                 <a href="#" className="btn btn-primary">
-                  Button 2
+                  Learn More
                 </a>
               </div>
               <div style={{ textAlign: 'center', marginTop: '1rem' }}>
