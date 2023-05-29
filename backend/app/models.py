@@ -1,14 +1,14 @@
 import base64
 import os
-from app import db, login 
+from app import app, db, login 
 from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(50), nullable=False)
-    last_name = db.Column(db.String(50), nullable=False)
+    # first_name = db.Column(db.String(50), nullable=False)
+    # last_name = db.Column(db.String(50), nullable=False)
     username = db.Column(db.String(75), nullable=False, unique=True)
     email = db.Column(db.String(75), nullable=False, unique=True)
     password = db.Column(db.String(255), nullable=False)
